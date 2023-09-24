@@ -1,0 +1,222 @@
+body {
+    width: 100%;
+    margin: 0%;
+    user-select: none;
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 5rem);
+}
+.filter-cont {
+    width: 20%;
+    height: 100%;
+    /* background-color: orange; */
+    background-color: black;
+}
+.filter-box {
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.filter-cont-box {
+    width: 30%;
+    height: 60%;
+    background-color: orange;
+}
+.filter {
+    width: 100%;
+    height: 25%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+    background-position: 0px 75px;
+    background-size: cover;
+    background-blend-mode: color-burn;
+}
+.brown {
+    background-color: #a52a2a59;
+}
+.orange {
+    background-color: #ffa50052;
+}
+.pink {
+    background-color: #ffc0cb57;
+}
+.transparent {
+    background-color: transparent;
+    border: 2px solid red;
+}
+.timer-cont {
+    width: 100%;
+    height: 30%;
+    /* background-color: gray; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.timer-box {
+    width: 100%;
+    height: 40%;
+    /* background-color: orchid; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.timer-box p {
+    font-size: 4vmin;
+    color: white;
+    visibility: hidden;
+}
+.camera-cont {
+    width: 60%;
+    height: 100%;
+    /* background-color: lightblue; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.view-area {
+    width: 100%;
+    height: 90%;
+    /* background-color: cornsilk; */
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.view-area>* {
+    position: absolute;
+}
+.filter-layer {
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    /* border: 2px solid red; */
+    z-index: 2;
+}
+.camera-view {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    /* object-fit: fill; */
+}
+.operations-cont {
+    width: 20%;
+    height: 100%;
+    /* background-color: lightgreen; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.operations {
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.gallery {
+    width: 100%;
+    height: 40%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-photo-film {
+    font-size: 7vh;
+    color: white;
+}
+.fa-photo-film:hover {
+    cursor: pointer;
+}
+.capture, .record {
+    width: 25%;
+    height: 19%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.capture-circle, .record-circle {
+    width: 50%;
+    height: 50%;
+    border: 1.75vh solid black;
+    border-radius: 50%;
+}
+.capture-circle {
+    background-color: white;
+}
+.record-circle {
+    background-color: red;
+}
+.scale-capture {
+    animation-name: scale-capture;
+    animation-duration: 1s;
+}
+.scale-record {
+    animation-name: scale-record;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes scale-capture {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes scale-record {
+    0% {
+        transform: scale(0.7);
+    }
+    25% {
+        transform: scale(0.85);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(0.7);
+    }
+}
+.footer {
+    width: 100%;
+    height: 4rem;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #28575D;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 2rem; */
+    color: white;
+    font-size: 1rem;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.connect {
+    width: 10%;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+.social-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+.social-cont a{
+    color: white;
+}
